@@ -239,8 +239,8 @@ export default function VillageHome() {
                   <div className={`
                     inline-block px-3 py-2 rounded-full text-sm font-bold mb-3
                     ${skill.category === 'offer'
-                      ? 'bg-village-violet text-white'
-                      : 'bg-village-pink text-white'
+                      ? 'bg-village-violet text-gray-700'
+                      : 'bg-village-pink text-gray-700'
                     }
                   `}>
                     {skill.category === 'offer' ? 'Teaching' : 'Learning'}
