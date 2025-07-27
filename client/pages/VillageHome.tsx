@@ -121,7 +121,7 @@ export default function VillageHome() {
 
       {/* Header */}
       <header className="relative z-10 p-6 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-brand-title mb-4">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{color: 'rgba(74, 144, 226, 1)'}}>
           Skill Match
         </h1>
         <p className="text-2xl md:text-3xl text-brand-subtitle font-semibold">
