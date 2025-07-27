@@ -231,7 +231,7 @@ export default function VillageHome() {
                   <div className="text-4xl mb-3 text-center">{skill.icon}</div>
 
                   {/* Skill Title */}
-                  <h3 className="font-bold text-gray-800 text-center mb-3 text-lg">
+                  <h3 className="font-bold text-gray-700 text-center mb-3 text-lg">
                     {skill.title}
                   </h3>
                   
