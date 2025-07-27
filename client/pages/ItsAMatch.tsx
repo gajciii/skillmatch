@@ -27,22 +27,6 @@ export default function ItsAMatch() {
 
   return (
     <div className="min-h-screen bg-brand-background flex items-center justify-center relative overflow-hidden">
-      {/* Floating hearts animation background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute text-white/20 text-2xl"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`
-            }}
-          >
-            ❤️
-          </div>
-        ))}
-      </div>
 
       {/* Back button */}
       <Link
