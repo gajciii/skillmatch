@@ -90,11 +90,11 @@ export default function Profile() {
       {/* Header */}
       <header className="relative z-10 p-6">
         <div className="max-w-4xl mx-auto">
-          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors text-xl">
+          <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-6 transition-colors text-xl">
             <ArrowLeft className="w-6 h-6 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold text-brand-title mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{color: 'rgb(74, 144, 226)'}}>
             My Profile
           </h1>
         </div>
@@ -205,7 +205,7 @@ export default function Profile() {
             {activeTab === "my-skills" && (
               <div>
                 <div className="flex justify-between items-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-800">My Skills</h3>
+                  <h3 className="text-2xl font-bold" style={{color: 'rgb(74, 144, 226)'}}>My Skills</h3>
                   <Link
                     to="/create-skill"
                     className="bg-village-violet text-white px-6 py-3 rounded-xl font-bold hover:bg-village-violet/90 transition-colors"
@@ -267,7 +267,7 @@ export default function Profile() {
 
             {activeTab === "matches" && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Recent Matches</h3>
+                <h3 className="text-2xl font-bold mb-6" style={{color: 'rgb(74, 144, 226)'}}>Recent Matches</h3>
                 <div className="space-y-4">
                   {[
                     { name: "John Smith", skill: "wants to learn Guitar", time: "2 hours ago", avatar: "👨" },
@@ -300,7 +300,7 @@ export default function Profile() {
 
             {activeTab === "settings" && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Profile Settings</h3>
+                <h3 className="text-2xl font-bold mb-6" style={{color: 'rgb(74, 144, 226)'}}>Profile Settings</h3>
                 <div className="space-y-6">
                   <div>
                     <label className="block text-gray-700 font-bold mb-3 text-xl">Display Name</label>

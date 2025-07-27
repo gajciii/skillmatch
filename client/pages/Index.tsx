@@ -23,7 +23,7 @@ export default function Index() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
       <div className="text-center">
         {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
+        <h1 className="text-2xl font-semibold flex items-center justify-center gap-3" style={{color: 'rgb(74, 144, 226)'}}>
           <svg
             className="animate-spin h-8 w-8 text-slate-400"
             viewBox="0 0 50 50"

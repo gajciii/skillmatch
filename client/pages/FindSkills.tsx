@@ -121,14 +121,14 @@ export default function FindSkills() {
       {/* Header */}
       <header className="relative z-10 p-6">
         <div className="max-w-6xl mx-auto">
-          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors text-xl">
+          <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-6 transition-colors text-xl">
             <ArrowLeft className="w-6 h-6 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold text-brand-title mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{color: 'rgb(74, 144, 226)'}}>
             Find Skills
           </h1>
-          <p className="text-xl md:text-2xl text-brand-subtitle font-semibold">
+          <p className="text-xl md:text-2xl text-gray-600 font-semibold">
             Connect with teachers who want to share their knowledge
           </p>
         </div>
@@ -213,7 +213,7 @@ export default function FindSkills() {
       <main className="relative z-10 px-6 pb-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-6">
-            <p className="text-white text-xl font-semibold">
+            <p className="text-gray-600 text-xl font-semibold">
               {filteredSkills.length} skills found
             </p>
           </div>

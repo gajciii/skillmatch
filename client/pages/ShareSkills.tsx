@@ -76,14 +76,14 @@ export default function ShareSkills() {
       {/* Header */}
       <header className="relative z-10 p-6">
         <div className="max-w-4xl mx-auto">
-          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors text-xl">
+          <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-6 transition-colors text-xl">
             <ArrowLeft className="w-6 h-6 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg" style={{color: 'rgb(74, 144, 226)'}}>
             Share Your Skills
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 drop-shadow font-semibold">
+          <p className="text-xl md:text-2xl text-gray-600 drop-shadow font-semibold">
             Teach others what you know best
           </p>
         </div>
@@ -93,8 +93,8 @@ export default function ShareSkills() {
       <div className="relative z-10 px-6 mb-8">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-2xl border border-white/30">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">How would you like to create your skill?</h2>
-            <div className="flex gap-4">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">How would you like to create your skill?</h2>
+            <div className="flex gap-4 justify-center items-center">
               <button
                 onClick={() => setInputMethod("type")}
                 className={`flex items-center gap-3 px-6 py-4 rounded-2xl font-bold text-lg transition-colors ${
@@ -127,7 +127,7 @@ export default function ShareSkills() {
         <div className="relative z-10 px-6 mb-8">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/30 text-center">
-              <div className="mb-8">
+              <div className="mb-8 text-center flex flex-col justify-start items-center">
                 <button
                   onClick={handleVoiceInput}
                   className={`w-32 h-32 rounded-full flex items-center justify-center text-white text-4xl shadow-lg transition-all ${

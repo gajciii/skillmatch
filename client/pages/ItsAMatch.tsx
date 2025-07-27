@@ -47,7 +47,7 @@ export default function ItsAMatch() {
       {/* Back button */}
       <Link
         to="/skill-match"
-        className="absolute top-6 left-6 inline-flex items-center text-white/80 hover:text-white transition-colors text-xl z-10"
+        className="absolute top-6 left-6 inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors text-xl z-10"
       >
         <ArrowLeft className="w-6 h-6 mr-2" />
         Back to Skills
@@ -58,10 +58,10 @@ export default function ItsAMatch() {
         {/* Match celebration */}
         <div className="mb-8">
           <div className="text-8xl mb-4">🎉</div>
-          <h1 className="text-5xl md:text-7xl font-bold text-brand-title mb-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{color: 'rgb(74, 144, 226)'}}>
             It's a Match!
           </h1>
-          <p className="text-2xl md:text-3xl text-brand-subtitle font-semibold">
+          <p className="text-2xl md:text-3xl text-gray-600 font-semibold">
             You and {matchData.teacher.name} are connected!
           </p>
         </div>

@@ -124,7 +124,7 @@ export default function VillageHome() {
         <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{color: 'rgba(74, 144, 226, 1)'}}>
           Skill Match
         </h1>
-        <p className="text-2xl md:text-3xl font-semibold" style={{color: 'rgba(155, 155, 155, 1)'}}>
+        <p className="text-2xl md:text-3xl font-semibold text-gray-600">
           Connect • Learn • Share across generations
         </p>
       </header>
@@ -210,51 +210,7 @@ export default function VillageHome() {
             </div>
           </div>
 
-          {/* Floating Skill Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {floatingSkills.map((skill, index) => (
-              <Link
-                key={skill.id}
-                to="/skill-match"
-                className="group cursor-pointer"
-              >
-                <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/30">
-                  
-                  {/* Verified Badge */}
-                  {skill.verified && (
-                    <div className="absolute -top-2 -right-2 bg-village-warm text-gray-700 rounded-full p-1">
-                      <Star className="w-4 h-4 fill-current" />
-                    </div>
-                  )}
-                  
-                  {/* Skill Icon */}
-                  <div className="text-4xl mb-3 text-center">{skill.icon}</div>
 
-                  {/* Skill Title */}
-                  <h3 className="font-bold text-center mb-3 text-lg" style={{color: 'rgba(74, 144, 226, 1)'}}>
-                    {skill.title}
-                  </h3>
-                  
-                  {/* Category Badge */}
-                  <div className={`
-                    inline-block px-3 py-2 rounded-full text-sm font-bold mb-3
-                    ${skill.category === 'offer'
-                      ? 'bg-village-violet text-gray-700'
-                      : 'bg-village-pink text-gray-700'
-                    }
-                  `}>
-                    {skill.category === 'offer' ? 'Teaching' : 'Learning'}
-                  </div>
-                  
-                  {/* Likes Counter */}
-                  <div className="flex items-center justify-center gap-2 text-village-red">
-                    <Heart className="w-5 h-5 fill-current" />
-                    <span className="text-lg font-bold">{skill.likes}</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
 
           {/* Quick Action Buttons */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -279,8 +235,22 @@ export default function VillageHome() {
               Share Skills
             </Link>
           </div>
+
         </div>
       </main>
+
+      {/* Hero Image - Full Screen Width */}
+      <div className="relative mt-12">
+        <div className="relative">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F5e0954c1182a45e48288ad7623a1f595%2F28ff2c71a2d846bdaa95600a3c67c770?format=webp&width=800"
+            alt="Intergenerational learning - young and older adults sharing skills together"
+            className="w-full h-auto object-cover"
+          />
+          {/* Top fade overlay */}
+          <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-brand-background to-transparent pointer-events-none"></div>
+        </div>
+      </div>
 
       {/* Floating Action Button */}
       <div className="fixed bottom-6 right-6 z-20">
