@@ -76,14 +76,14 @@ export default function ShareSkills() {
       {/* Header */}
       <header className="relative z-10 p-6">
         <div className="max-w-4xl mx-auto">
-          <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors text-xl">
+          <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-6 transition-colors text-xl">
             <ArrowLeft className="w-6 h-6 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg" style={{color: 'rgb(74, 144, 226)'}}>
             Share Your Skills
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 drop-shadow font-semibold">
+          <p className="text-xl md:text-2xl text-gray-600 drop-shadow font-semibold">
             Teach others what you know best
           </p>
         </div>
