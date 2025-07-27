@@ -194,7 +194,7 @@ export default function VillageHome() {
 
             {/* Map Legend */}
             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-2xl p-3 shadow-lg">
-              <h3 className="font-bold text-gray-800 text-lg mb-2">Skills Near You</h3>
+              <h3 className="font-bold text-gray-700 text-lg mb-2">Skills Near You</h3>
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <div className="w-3 h-3 bg-village-pink rounded-full"></div>
                 <span>Available Skills</span>
