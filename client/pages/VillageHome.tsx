@@ -239,6 +239,13 @@ export default function VillageHome() {
         </div>
       </main>
 
+      {/* App Description */}
+      <div className="text-center mt-5 px-6">
+        <p className="text-xl md:text-2xl font-medium text-gray-700 max-w-2xl mx-auto">
+          Where neighbors become teachers and learners become friends. Build skills, bridge generations, strengthen communities.
+        </p>
+      </div>
+
       {/* Hero Image - Full Screen Width */}
       <div className="relative mt-12">
         <div className="relative">
