@@ -103,14 +103,14 @@ export default function Register() {
 
       {/* Header */}
       <header className="relative z-10 p-6 text-center">
-        <Link to="/" className="inline-flex items-center text-brand-title hover:text-brand-title/80 mb-4 transition-colors">
+        <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-4 transition-colors">
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Home
         </Link>
-        <h1 className="text-4xl md:text-6xl font-bold text-brand-title mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{color: 'rgb(74, 144, 226)'}}>
           Welcome to Skill Match
         </h1>
-        <p className="text-2xl md:text-3xl text-brand-subtitle font-semibold">
+        <p className="text-2xl md:text-3xl text-gray-600 font-semibold">
           Let's get to know you better
         </p>
       </header>
@@ -119,8 +119,8 @@ export default function Register() {
       <div className="relative z-10 px-6 mb-8">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-white font-semibold">Step {currentStep + 1} of {questions.length}</span>
-            <span className="text-white/80">{Math.round(((currentStep + 1) / questions.length) * 100)}%</span>
+            <span className="text-gray-600 font-semibold">Step {currentStep + 1} of {questions.length}</span>
+            <span className="text-gray-500">{Math.round(((currentStep + 1) / questions.length) * 100)}%</span>
           </div>
           <div className="w-full bg-white/20 rounded-full h-3">
             <div 
