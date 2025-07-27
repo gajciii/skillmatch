@@ -180,7 +180,7 @@ export default function VillageHome() {
                   {hoveredSkill === skill.id && (
                     <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-white/30 whitespace-nowrap z-10">
                       <div className="text-center">
-                        <h3 className="font-bold text-gray-700 text-lg mb-1">{skill.title}</h3>
+                        <h3 className="font-bold text-lg mb-1" style={{color: 'rgba(74, 144, 226, 1)'}}>{skill.title}</h3>
                         <p className="text-gray-600 text-sm mb-1">by {skill.teacher}</p>
                         <p className="text-village-pink font-semibold text-sm">{skill.distance} away</p>
                       </div>
