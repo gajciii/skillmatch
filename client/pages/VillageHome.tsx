@@ -172,7 +172,7 @@ export default function VillageHome() {
                   {/* Verified Badge */}
                   {skill.verified && (
                     <div className="absolute -top-1 -right-1 w-4 h-4 bg-village-warm rounded-full flex items-center justify-center">
-                      <Star className="w-3 h-3 text-white fill-current" />
+                      <Star className="w-3 h-3 text-gray-700 fill-current" />
                     </div>
                   )}
 
