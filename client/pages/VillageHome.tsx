@@ -236,16 +236,21 @@ export default function VillageHome() {
             </Link>
           </div>
 
-          {/* Hero Image */}
-          <div className="mt-12">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F5e0954c1182a45e48288ad7623a1f595%2F28ff2c71a2d846bdaa95600a3c67c770?format=webp&width=800"
-              alt="Intergenerational learning - young and older adults sharing skills together"
-              className="w-full h-auto shadow-2xl"
-            />
-          </div>
         </div>
       </main>
+
+      {/* Hero Image - Full Screen Width */}
+      <div className="relative mt-12">
+        <div className="relative">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F5e0954c1182a45e48288ad7623a1f595%2F28ff2c71a2d846bdaa95600a3c67c770?format=webp&width=800"
+            alt="Intergenerational learning - young and older adults sharing skills together"
+            className="w-full h-auto object-cover"
+          />
+          {/* Top fade overlay */}
+          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-brand-background to-transparent pointer-events-none"></div>
+        </div>
+      </div>
 
       {/* Floating Action Button */}
       <div className="fixed bottom-6 right-6 z-20">
