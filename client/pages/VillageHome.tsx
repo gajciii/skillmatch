@@ -236,22 +236,13 @@ export default function VillageHome() {
             </Link>
           </div>
 
-          {/* Hero Image with Fade Transition */}
-          <div className="mt-12 relative overflow-hidden">
-            <div className="relative max-w-4xl mx-auto">
-              {/* Gradient overlay for fade effect */}
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-background via-brand-background/80 to-transparent z-10 pointer-events-none"></div>
-
-              {/* Main image */}
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F5e0954c1182a45e48288ad7623a1f595%2F28ff2c71a2d846bdaa95600a3c67c770?format=webp&width=800"
-                alt="Intergenerational learning - young and older adults sharing skills together"
-                className="w-full h-auto rounded-3xl shadow-2xl opacity-90 hover:opacity-100 transition-opacity duration-500"
-              />
-
-              {/* Bottom fade overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-background to-transparent z-10"></div>
-            </div>
+          {/* Hero Image */}
+          <div className="mt-12">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F5e0954c1182a45e48288ad7623a1f595%2F28ff2c71a2d846bdaa95600a3c67c770?format=webp&width=800"
+              alt="Intergenerational learning - young and older adults sharing skills together"
+              className="w-full h-auto shadow-2xl"
+            />
           </div>
         </div>
       </main>
