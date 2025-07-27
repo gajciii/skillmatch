@@ -41,7 +41,6 @@ export default function ItsAMatch() {
       <div className="relative z-10 text-center max-w-2xl mx-auto px-6">
         {/* Match celebration */}
         <div className="mb-8">
-          <div className="text-8xl mb-4">🎉</div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{color: 'rgb(74, 144, 226)'}}>
             It's a Match!
           </h1>
