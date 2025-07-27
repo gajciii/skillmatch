@@ -94,7 +94,7 @@ export default function SkillDetail() {
       {/* Header */}
       <header className="relative z-10 p-6">
         <div className="max-w-4xl mx-auto">
-          <Link to="/skill-match" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors text-xl">
+          <Link to="/skill-match" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-6 transition-colors text-xl">
             <ArrowLeft className="w-6 h-6 mr-2" />
             Back to Skills
           </Link>
@@ -160,7 +160,7 @@ export default function SkillDetail() {
 
           {/* Teacher Profile */}
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/30">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">About Your Teacher</h2>
+            <h2 className="text-2xl font-bold mb-6" style={{color: 'rgb(74, 144, 226)'}}>About Your Teacher</h2>
             
             <div className="flex flex-col md:flex-row gap-6 mb-6">
               {/* Avatar and basic info */}
@@ -231,7 +231,7 @@ export default function SkillDetail() {
 
           {/* Curriculum */}
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/30">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">What You'll Learn</h2>
+            <h2 className="text-2xl font-bold mb-6" style={{color: 'rgb(74, 144, 226)'}}>What You'll Learn</h2>
             
             <div className="space-y-4">
               {skillData.curriculum.map((lesson) => (
@@ -256,7 +256,7 @@ export default function SkillDetail() {
 
           {/* Reviews */}
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/30">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Student Reviews</h2>
+            <h2 className="text-2xl font-bold mb-6" style={{color: 'rgb(74, 144, 226)'}}>Student Reviews</h2>
             
             <div className="space-y-6">
               {skillData.reviews.map((review, index) => (
