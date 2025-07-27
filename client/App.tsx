@@ -13,6 +13,9 @@ import ShareSkills from "./pages/ShareSkills";
 import Profile from "./pages/Profile";
 import ItsAMatch from "./pages/ItsAMatch";
 import SkillDetail from "./pages/SkillDetail";
+import Call from "./pages/Call";
+import Messages from "./pages/Messages";
+import VideoCall from "./pages/VideoCall";
 import PlaceholderPage from "./pages/PlaceholderPage";
 import NotFound from "./pages/NotFound";
 
