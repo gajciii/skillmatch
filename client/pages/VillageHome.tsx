@@ -248,7 +248,7 @@ export default function VillageHome() {
             className="w-full h-auto object-cover"
           />
           {/* Top fade overlay */}
-          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-brand-background to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-brand-background to-transparent pointer-events-none"></div>
         </div>
       </div>
 
