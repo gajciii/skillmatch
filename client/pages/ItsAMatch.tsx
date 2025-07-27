@@ -9,7 +9,7 @@ export default function ItsAMatch() {
     skill: {
       title: "Guitar Lessons for Beginners",
       category: "Music",
-      icon: "🎸"
+      icon: "����"
     },
     teacher: {
       name: "Maria Rodriguez",
@@ -59,6 +59,11 @@ export default function ItsAMatch() {
                 {matchData.student.avatar}
               </div>
               <p className="font-bold text-gray-800 text-lg">{matchData.student.name}</p>
+              <p className="text-gray-600">Age 28</p>
+              <div className="flex items-center justify-center gap-1 mt-1">
+                <Star className="w-4 h-4 fill-current text-yellow-400" />
+                <span className="text-sm font-semibold">4.3</span>
+              </div>
             </div>
 
             {/* Connecting icon */}
