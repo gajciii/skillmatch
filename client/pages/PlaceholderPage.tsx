@@ -14,7 +14,7 @@ export default function PlaceholderPage({ title, description, emoji }: Placehold
 
       {/* Header */}
       <header className="relative z-10 p-6">
-        <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-4 transition-colors">
+        <Link to="/" className="inline-flex items-center text-gray-600 hover:text-gray-800 mb-4 transition-colors">
           <ArrowLeft className="w-5 h-5 mr-2" />
           Back to Village
         </Link>
@@ -28,7 +28,7 @@ export default function PlaceholderPage({ title, description, emoji }: Placehold
             <div className="text-6xl mb-6 text-village-violet">
               <Construction className="w-16 h-16 mx-auto" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6" style={{color: 'rgb(74, 144, 226)'}}>
               {title}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 font-semibold">
