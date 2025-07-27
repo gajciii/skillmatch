@@ -41,6 +41,9 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/connect/:skillId" element={<ItsAMatch />} />
           <Route path="/skill/:skillId" element={<SkillDetail />} />
+          <Route path="/call/:skillId" element={<Call />} />
+          <Route path="/messages/:skillId" element={<Messages />} />
+          <Route path="/video/:skillId" element={<VideoCall />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
