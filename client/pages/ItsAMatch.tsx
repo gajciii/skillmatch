@@ -21,28 +21,12 @@ export default function ItsAMatch() {
     },
     student: {
       name: "You",
-      avatar: "👤"
+      avatar: "👨‍💼"
     }
   };
 
   return (
     <div className="min-h-screen bg-brand-background flex items-center justify-center relative overflow-hidden">
-      {/* Floating hearts animation background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute text-white/20 text-2xl"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`
-            }}
-          >
-            ❤️
-          </div>
-        ))}
-      </div>
 
       {/* Back button */}
       <Link
@@ -57,7 +41,6 @@ export default function ItsAMatch() {
       <div className="relative z-10 text-center max-w-2xl mx-auto px-6">
         {/* Match celebration */}
         <div className="mb-8">
-          <div className="text-8xl mb-4">🎉</div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{color: 'rgb(74, 144, 226)'}}>
             It's a Match!
           </h1>
@@ -76,12 +59,17 @@ export default function ItsAMatch() {
                 {matchData.student.avatar}
               </div>
               <p className="font-bold text-gray-800 text-lg">{matchData.student.name}</p>
+              <p className="text-gray-600">Age 28</p>
+              <div className="flex items-center justify-center gap-1 mt-1">
+                <Star className="w-4 h-4 fill-current text-yellow-400" />
+                <span className="text-sm font-semibold">4.3</span>
+              </div>
             </div>
 
-            {/* Connecting heart */}
+            {/* Connecting icon */}
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-village-red rounded-full flex items-center justify-center mb-2 shadow-lg">
-                <Heart className="w-8 h-8 text-white fill-current" />
+              <div className="w-16 h-16 bg-village-red rounded-full flex items-center justify-center mb-5 shadow-lg">
+                <i className="fi fi-sr-refresh text-white text-2xl"></i>
               </div>
               <div className="flex items-center gap-1">
                 <div className="text-2xl">{matchData.skill.icon}</div>

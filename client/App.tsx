@@ -13,6 +13,9 @@ import ShareSkills from "./pages/ShareSkills";
 import Profile from "./pages/Profile";
 import ItsAMatch from "./pages/ItsAMatch";
 import SkillDetail from "./pages/SkillDetail";
+import Call from "./pages/Call";
+import Messages from "./pages/Messages";
+import VideoCall from "./pages/VideoCall";
 import PlaceholderPage from "./pages/PlaceholderPage";
 import NotFound from "./pages/NotFound";
 
@@ -38,6 +41,9 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/connect/:skillId" element={<ItsAMatch />} />
           <Route path="/skill/:skillId" element={<SkillDetail />} />
+          <Route path="/call/:skillId" element={<Call />} />
+          <Route path="/messages/:skillId" element={<Messages />} />
+          <Route path="/video/:skillId" element={<VideoCall />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
