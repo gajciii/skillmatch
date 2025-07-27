@@ -13,22 +13,22 @@
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 25%;
 
     --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: 220 13% 25%;
 
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary-foreground: 220 13% 25%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-foreground: 220 13% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -56,14 +56,14 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Skill Match Village Colors */
-    --village-pink: 330 85% 75%;
-    --village-pink-light: 330 85% 85%;
-    --village-violet: 280 85% 70%;
-    --village-violet-light: 280 85% 80%;
-    --village-red: 10 85% 70%;
-    --village-red-light: 10 85% 80%;
-    --village-warm: 20 85% 75%;
-    --village-glow: 330 85% 75%;
+    --village-pink: 210 85% 65%;
+    --village-pink-light: 210 85% 75%;
+    --village-violet: 240 85% 70%;
+    --village-violet-light: 240 85% 80%;
+    --village-red: 45 85% 65%;
+    --village-red-light: 45 85% 75%;
+    --village-warm: 50 85% 70%;
+    --village-glow: 210 85% 65%;
   }
 
   .dark {
@@ -104,14 +104,14 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Skill Match Village Colors - Dark Mode */
-    --village-pink: 330 70% 60%;
-    --village-pink-light: 330 70% 70%;
-    --village-violet: 280 70% 55%;
-    --village-violet-light: 280 70% 65%;
-    --village-red: 10 70% 55%;
-    --village-red-light: 10 70% 65%;
-    --village-warm: 20 70% 60%;
-    --village-glow: 330 70% 60%;
+    --village-pink: 210 70% 55%;
+    --village-pink-light: 210 70% 65%;
+    --village-violet: 240 70% 60%;
+    --village-violet-light: 240 70% 70%;
+    --village-red: 45 70% 60%;
+    --village-red-light: 45 70% 70%;
+    --village-warm: 50 70% 65%;
+    --village-glow: 210 70% 55%;
   }
 }
 

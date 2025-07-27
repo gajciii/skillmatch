@@ -62,8 +62,8 @@ export default {
           background: "#f8f8f9",
           title: "#026670",
           subtitle: "#026670",
-          button: "#FEF9C7",
-          "button-text": "#374151",
+          button: "#FFF3A0",
+          "button-text": "#4B5563",
         },
         village: {
           pink: "hsl(var(--village-pink))",

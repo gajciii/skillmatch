@@ -121,10 +121,10 @@ export default function VillageHome() {
 
       {/* Header */}
       <header className="relative z-10 p-6 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-brand-title mb-4">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4" style={{color: 'rgba(74, 144, 226, 1)'}}>
           Skill Match
         </h1>
-        <p className="text-2xl md:text-3xl text-brand-subtitle font-semibold">
+        <p className="text-2xl md:text-3xl font-semibold" style={{color: 'rgba(155, 155, 155, 1)'}}>
           Connect • Learn • Share across generations
         </p>
       </header>
@@ -172,7 +172,7 @@ export default function VillageHome() {
                   {/* Verified Badge */}
                   {skill.verified && (
                     <div className="absolute -top-1 -right-1 w-4 h-4 bg-village-warm rounded-full flex items-center justify-center">
-                      <Star className="w-3 h-3 text-white fill-current" />
+                      <Star className="w-3 h-3 text-gray-700 fill-current" />
                     </div>
                   )}
 
@@ -180,7 +180,7 @@ export default function VillageHome() {
                   {hoveredSkill === skill.id && (
                     <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl border border-white/30 whitespace-nowrap z-10">
                       <div className="text-center">
-                        <h3 className="font-bold text-gray-800 text-lg mb-1">{skill.title}</h3>
+                        <h3 className="font-bold text-lg mb-1" style={{color: 'rgba(74, 144, 226, 1)'}}>{skill.title}</h3>
                         <p className="text-gray-600 text-sm mb-1">by {skill.teacher}</p>
                         <p className="text-village-pink font-semibold text-sm">{skill.distance} away</p>
                       </div>
@@ -194,7 +194,7 @@ export default function VillageHome() {
 
             {/* Map Legend */}
             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-2xl p-3 shadow-lg">
-              <h3 className="font-bold text-gray-800 text-lg mb-2">Skills Near You</h3>
+              <h3 className="font-bold text-lg mb-2" style={{color: 'rgba(74, 144, 226, 1)'}}>Skills Near You</h3>
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <div className="w-3 h-3 bg-village-pink rounded-full"></div>
                 <span>Available Skills</span>
@@ -222,7 +222,7 @@ export default function VillageHome() {
                   
                   {/* Verified Badge */}
                   {skill.verified && (
-                    <div className="absolute -top-2 -right-2 bg-village-warm text-white rounded-full p-1">
+                    <div className="absolute -top-2 -right-2 bg-village-warm text-gray-700 rounded-full p-1">
                       <Star className="w-4 h-4 fill-current" />
                     </div>
                   )}
@@ -231,7 +231,7 @@ export default function VillageHome() {
                   <div className="text-4xl mb-3 text-center">{skill.icon}</div>
 
                   {/* Skill Title */}
-                  <h3 className="font-bold text-gray-800 text-center mb-3 text-lg">
+                  <h3 className="font-bold text-center mb-3 text-lg" style={{color: 'rgba(74, 144, 226, 1)'}}>
                     {skill.title}
                   </h3>
                   
@@ -239,8 +239,8 @@ export default function VillageHome() {
                   <div className={`
                     inline-block px-3 py-2 rounded-full text-sm font-bold mb-3
                     ${skill.category === 'offer'
-                      ? 'bg-village-violet text-white'
-                      : 'bg-village-pink text-white'
+                      ? 'bg-village-violet text-gray-700'
+                      : 'bg-village-pink text-gray-700'
                     }
                   `}>
                     {skill.category === 'offer' ? 'Teaching' : 'Learning'}
