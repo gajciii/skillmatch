@@ -61,10 +61,10 @@ export default function ItsAMatch() {
               <p className="font-bold text-gray-800 text-lg">{matchData.student.name}</p>
             </div>
 
-            {/* Connecting heart */}
+            {/* Connecting icon */}
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-village-red rounded-full flex items-center justify-center mb-2 shadow-lg">
-                <Heart className="w-8 h-8 text-white fill-current" />
+                <i className="fi fi-sr-refresh text-white text-2xl"></i>
               </div>
               <div className="flex items-center gap-1">
                 <div className="text-2xl">{matchData.skill.icon}</div>
