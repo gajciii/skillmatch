@@ -127,7 +127,7 @@ export default function ShareSkills() {
         <div className="relative z-10 px-6 mb-8">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/30 text-center">
-              <div className="mb-8 text-center">
+              <div className="mb-8 text-center flex flex-col justify-start items-center">
                 <button
                   onClick={handleVoiceInput}
                   className={`w-32 h-32 rounded-full flex items-center justify-center text-white text-4xl shadow-lg transition-all ${
