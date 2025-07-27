@@ -9,7 +9,7 @@ export default function ItsAMatch() {
     skill: {
       title: "Guitar Lessons for Beginners",
       category: "Music",
-      icon: "����"
+      icon: "🎸"
     },
     teacher: {
       name: "Maria Rodriguez",
@@ -68,7 +68,7 @@ export default function ItsAMatch() {
 
             {/* Connecting icon */}
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-village-red rounded-full flex items-center justify-center mb-2 shadow-lg">
+              <div className="w-16 h-16 bg-village-red rounded-full flex items-center justify-center mb-5 pb-5 shadow-lg">
                 <i className="fi fi-sr-refresh text-white text-2xl"></i>
               </div>
               <div className="flex items-center gap-1">
