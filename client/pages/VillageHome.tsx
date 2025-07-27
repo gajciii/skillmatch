@@ -210,51 +210,7 @@ export default function VillageHome() {
             </div>
           </div>
 
-          {/* Floating Skill Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {floatingSkills.map((skill, index) => (
-              <Link
-                key={skill.id}
-                to="/skill-match"
-                className="group cursor-pointer"
-              >
-                <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/30">
-                  
-                  {/* Verified Badge */}
-                  {skill.verified && (
-                    <div className="absolute -top-2 -right-2 bg-village-warm text-gray-700 rounded-full p-1">
-                      <Star className="w-4 h-4 fill-current" />
-                    </div>
-                  )}
-                  
-                  {/* Skill Icon */}
-                  <div className="text-4xl mb-3 text-center">{skill.icon}</div>
 
-                  {/* Skill Title */}
-                  <h3 className="font-bold text-center mb-3 text-lg" style={{color: 'rgba(74, 144, 226, 1)'}}>
-                    {skill.title}
-                  </h3>
-                  
-                  {/* Category Badge */}
-                  <div className={`
-                    inline-block px-3 py-2 rounded-full text-sm font-bold mb-3
-                    ${skill.category === 'offer'
-                      ? 'bg-village-violet text-gray-700'
-                      : 'bg-village-pink text-gray-700'
-                    }
-                  `}>
-                    {skill.category === 'offer' ? 'Teaching' : 'Learning'}
-                  </div>
-                  
-                  {/* Likes Counter */}
-                  <div className="flex items-center justify-center gap-2 text-village-red">
-                    <Heart className="w-5 h-5 fill-current" />
-                    <span className="text-lg font-bold">{skill.likes}</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
 
           {/* Quick Action Buttons */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
