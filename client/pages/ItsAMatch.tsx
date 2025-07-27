@@ -21,7 +21,7 @@ export default function ItsAMatch() {
     },
     student: {
       name: "You",
-      avatar: "👤"
+      avatar: "👨‍💼"
     }
   };
 
